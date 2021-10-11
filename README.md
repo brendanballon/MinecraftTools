@@ -48,7 +48,7 @@ import Foundation
 import DataTools
 import MinecraftNBT
 
-let url = URL(fileURLWithPath: "/Users/yourname/Desktop/level.dat.decompressed")
+let url = URL(fileURLWithPath: "")
 let data = try Data(contentsOf: url)
 
 let structure = NBTStructure(decompressed: data)
@@ -61,5 +61,5 @@ print(structure)
 Writing data back to an uncompressed file is very simple.
 
 ``` swift
-try structure.data.write(to: URL(fileURLWithPath: "/Users/yourname/Desktop/level_rewrite.dat.decompressed"))
+try structure.data.write(to: URL(fileURLWithPath: ""))
 ```
